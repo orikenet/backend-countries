@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: docker.io/orik45/backend2
+  tag: dev
+  pullPolicy: IfNotPresent
+  containerPort: 5001
+
+service:
+  type: ClusterIP
+  port: 5001
+
+env:
+  SKYCAST_ENV: dev

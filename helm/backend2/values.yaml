@@ -1,0 +1,18 @@
+replicaCount: 1
+
+image:
+  repository: docker.io/orik45/backend2
+  tag: latest
+  pullPolicy: IfNotPresent
+  containerPort: 5001
+
+nameOverride: ""
+fullnameOverride: "countries-api"
+
+service:
+  type: ClusterIP
+  port: 5001
+
+env: {}
+
+resources: {}
